@@ -2,9 +2,10 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 call plug#begin()
-" Default config from tpope.
+" tpope plugins selection
 " TODO: Check the introduced changes by this plugin
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
 
 " Next are some themes that must be checked
 Plug 'morhetz/gruvbox'
@@ -19,6 +20,9 @@ Plug 'vim-airline/vim-airline'
 
 " Use font icons for several plugins
 " Plug 'ryanoasis/vim-devicons'
+
+" File explorer
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -35,3 +39,5 @@ let g:GuiFont='Anonymice Powerline:h12'
 GuiFont g:GuiFont
 
 let g:airline_powerline_fonts=1
+
+map <C-n> :NERDTreeToggle<CR>
