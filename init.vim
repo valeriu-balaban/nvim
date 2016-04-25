@@ -31,6 +31,7 @@ set background=dark
 
 colorscheme gruvbox
 
-Guifont Anonymice Powerline:h12
-let g:airline_powerline_fonts=1
+let g:GuiFont='Anonymice Powerline:h12'
+GuiFont g:GuiFont
 
+let g:airline_powerline_fonts=1
