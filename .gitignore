@@ -1,0 +1,2 @@
+# Exclude the plugged directory in which pluggins are cloned
+plugged/
