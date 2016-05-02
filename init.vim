@@ -19,10 +19,13 @@ Plug 'equalsraf/neovim-gui-shim'
 Plug 'vim-airline/vim-airline'
 
 " Use font icons for several plugins
-" Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " File explorer
 Plug 'scrooloose/nerdtree'
+
+" Git changes to the file
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -34,9 +37,6 @@ syntax enable
 set background=dark
 
 colorscheme gruvbox
-
-let g:GuiFont='Ubuntu Mono derivative Powerlin:h11'
-GuiFont g:GuiFont
 
 let g:airline_powerline_fonts=1
 
@@ -93,7 +93,7 @@ nnoremap <leader>r :call NumberToggle()<cr>
 
 " Add command to for Y to do the same as D, to yank to the end of line
 
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-let g:airline_symbols.space = "\ua0"
+" if !exists('g:airline_symbols')
+  " let g:airline_symbols = {}
+" endif
+" let g:airline_symbols.space = "\ua0"
